@@ -3,16 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Para el SEO de Google u otros buscadores, le indico que entre a index y siga los enlaces-->
-    <meta name="theme-color" content="#09f">
-    <!-- Para el color del navegador en la Pc o en móviles, con el atributo name y content genero el color especificado.-->
 
-    <title>Portfolio de Julián Dorao</title>
-    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Portfolio de Julián Dorao, +1 año de experiencia como desarrollador web. ">
+    <!-- La descripción de nuestra página para Google -->
+    <meta name="robots" content="index, follow">
+    <!-- Para el SEO de Google u otros buscadores, le indico a Google que entre al index y siga los enlaces-->
+    <meta name="theme-color" content="#09f">
+    <!-- Para el color del navegador en la Pc o en móviles, con la relación "theme-color" y el atributo content genero el color que quiero.-->
+    
+    <!-- OPEN GRAPH:
+         Un conjunto de etiquetas que creó Facebook para que cuando compartimos contenido de nuestra página en una red social se vea correctamente:
+         Para cotejar una URL ver esto como ejemplo: https://www.opengraph.xyz -->
+
+    <meta property="og:title" content="Portfolio de @Juliandavidlp.">
+    <meta property="og:description" content="Portfolio de Julián Dorao, +1 año de experiencia como desarrollador web.">
+    <meta property="og:image" content="./img/Julián.jpg">
+    <meta property="og:image:alt" content="Una fotografía de Julián Dorao en Bariloche, Argentina.">
+    <!-- Nota: Para ver más etiquetas ingresar a The Open Graph protocol, es importante compartir y renderizar correctamente en distintas plataformas nuestra página. -->
+
+    <!-- SEO -->
+    <link rel="alternate" href="#/en" hreflang="en-GB">
+    <!-- Para enlazar a un recurso externo alternativo a la página  -->
+    <link rel="canonical" href="#">
+    <!-- Para que el navegador detecte cuál es la página principal entre dos páginas duplicadas.  -->
+
+    <title>Portfolio Julián Dorao</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" sizes="16x16 32x32 48x48 64x64">
     <!-- El atributo rel indica que el archivo es un ícono, 
          el atributo type especifica el tipo de archivo como un ícono.-->
+
+    <style>
+        body {
+            background: #c3f3ff;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -28,6 +53,7 @@
     <li class="list-item">Codo a codo inicial - jul 2023</li>
     <li class="list-item">Full Stack en Python - dic 2023</li>
     <li class="list-item">Certificado profesional de IBM Front-End Developer - dic 2024</li>
+    <li class="list-item">Introducción a la psicología (en Yale) - oct 2021</li>
 </ul>
 
 <img
@@ -37,8 +63,41 @@ width="200"
 title="Foto de Julián Dorao"
 src="./img/Julián.jpg" 
 alt="Una fotografía de Julián Dorao sonriendo y mirando a la cámara en Bariloche, Argentina.">
-<!-- El atributo "id" es un atributo global, como "class". En este sentido, todos los elementos se pueden repetir por medio de clases. 
-     Pero a cada elemento le corresponde un "id" global.--->
+<!-- Hay atributos globales y específicos. El atributo "id" es un atributo global, como "class". En este sentido, todos los elementos se pueden repetir por medio de clases, 
+     pero a cada elemento le corresponde un "id" específico. Por otro lado, existen atributos booleanos, como por ej. hidden--->
+     
+</img>
+
+<!--Semántica: -->
+<section>
+    <article>
+        <header>
+        <h2>Proyectos realizados</h2>
+
+        <p>Desarrollo de un sitio web de películas con descripciones propias y una interfaz moderna.</p>
+        </header>
+        <footer>
+            <!--Una aclaración cortita:-->
+           <small>Tecnologías usadas: HTML, CSS y JavaScript</small>
+        </footer>
+    
+    </article>
+</section>
+
+
+<aside>
+    <header>
+        <h3>Mis tecnologías favoritas</h3>
+    </header>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Python</li>
+    </ol>
+</aside>
 
 </body>
 <!-- Más info: https://developer.mozilla.org/es/docs/Web/HTML-->
