@@ -41,64 +41,96 @@
 </head>
 
 <body>
-    <h1>Portfolio de @Juliandavidlp</h1>
-
-
-<p>+1 año de experiencia como <strong>Desarrollador Web</strong>.<br>
-    Estudiante del Profesorado en Letras y de guitarra clásica.
-</p>
-
-<h2>Experiencia</h2>
-<ul>
-    <li class="list-item">Codo a codo inicial - jul 2023</li>
-    <li class="list-item">Full Stack en Python - dic 2023</li>
-    <li class="list-item">Certificado profesional de IBM Front-End Developer - dic 2024</li>
-    <li class="list-item">Introducción a la psicología (en Yale) - oct 2021</li>
-</ul>
-
-<img
-id="photo-image"             
-height="200"
-width="200"
-title="Foto de Julián Dorao"
-src="./img/Julián.jpg" 
-alt="Una fotografía de Julián Dorao sonriendo y mirando a la cámara en Bariloche, Argentina.">
-<!-- Hay atributos globales y específicos. El atributo "id" es un atributo global, como "class". En este sentido, todos los elementos se pueden repetir por medio de clases, 
-     pero a cada elemento le corresponde un "id" específico. Por otro lado, existen atributos booleanos, como por ej. hidden--->
-     
-</img>
-
-<!--Semántica: -->
-<section>
-    <article>
-        <header>
-        <h2>Proyectos realizados</h2>
-
-        <p>Desarrollo de un sitio web de películas con descripciones propias y una interfaz moderna.</p>
-        </header>
-        <footer>
-            <!--Una aclaración cortita:-->
-           <small>Tecnologías usadas: HTML, CSS y JavaScript</small>
-        </footer>
-    
-    </article>
-</section>
-
-
-<aside>
     <header>
-        <h3>Mis tecnologías favoritas</h3>
+        <h1>Portfolio de @Juliandavidlp</h1>
+        <nav>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="https://www.linkedin.com/in/julián-dorao-299b561bb/" target="_blank" rel="noreferrer">Linkedin</a>
+            <!--El atributo rel con el valor noreferrer es para no enviar la cabecera del referente, 
+                no enviar datos de nuestro login por http a otra página, y evitar un problema de seguridad.-->
+        </nav>
     </header>
-    <ol>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>Python</li>
-    </ol>
-</aside>
+    <main>
 
+        <p>+1 año de experiencia como <strong>Desarrollador Web</strong>.<br>
+         Estudiante del Profesorado en Letras y de guitarra clásica.
+        </p>
+
+        <h2 id="experiencia">Experiencia</h2>
+        
+        <ul>
+            <li class="list-item">Codo a codo inicial - jul 2023</li>
+            <li class="list-item">Full Stack en Python - dic 2023</li>
+            <li class="list-item">Certificado profesional de IBM Front-End Developer - dic 2024</li>
+            <li class="list-item">Introducción a la psicología (en Yale) - oct 2021</li>
+        </ul>
+
+        <img
+        id="photo-image"             
+        height="200"
+        width="200"
+        title="Foto de Julián Dorao"
+        src="./img/Julián.jpg" 
+        alt="Una fotografía de Julián Dorao sonriendo y mirando a la cámara en Bariloche, Argentina.">
+        <!-- Hay atributos globales y específicos. El atributo "id" es un atributo global, como "class". En este sentido, todos los elementos se pueden repetir por medio de clases, 
+             pero a cada elemento le corresponde un "id" específico. Por otro lado, existen atributos booleanos, como por ej. hidden--->
+     
+        </img>
+
+        <!--Un ejemplo del uso de la semántica: -->
+        <section>
+           <article>
+               <header>
+               <h2 id="proyectos">Proyectos realizados</h2>
+
+               <p>Desarrollo de un sitio web de películas con descripciones propias y una interfaz moderna.</p>
+              </header>
+              <footer>
+                  <!--Una aclaración cortita:-->
+                 <small>Tecnologías usadas: HTML, CSS y JavaScript</small>
+               </footer>
+           </article>
+
+          <article>
+              <header>
+             <h2>Proyectos realizados</h2>
+
+             <p>Desarrollo de un sitio web de películas con descripciones propias y una interfaz moderna.</p>
+             </header>
+             <footer>
+                    <!--Una aclaración cortita:-->
+                   <small>Tecnologías usadas: HTML, CSS y JavaScript</small>
+             </footer>
+          </article>
+        </section>
+
+
+        <aside> <!-- El aside se relaciona con información secundaria al contenido principal-->
+            <header>
+                <h3>Mis tecnologías favoritas</h3>
+           </header>
+           <ol>
+              <li>HTML</li>
+              <li>CSS</li>
+             <li>JavaScript</li>
+             <li>React</li>
+                <li>Node.js</li>
+                <li>Python</li>
+           </ol>
+        </aside>
+
+        <div role="#">
+        </div>
+        <!--  Acá, usé el atributo role, que se puede usar con distintos valores para generar un determinados roles. -->
+    </main>
+
+    <footer>
+        Copyright © 2024 - Portfolio web de Julián Dorao <br>
+
+        <a href="mailito:juliandorao@hotmail.com">Escribime por Correo</a>
+        <a href="https://wa.me/5492216544515/?text=Hola, ví tu Portfolio:">Whatsapp</a>
+    </footer>
 </body>
 <!-- Más info: https://developer.mozilla.org/es/docs/Web/HTML-->
 </html>
