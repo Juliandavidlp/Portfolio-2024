@@ -123,6 +123,58 @@
         <div role="#">
         </div>
         <!--  Acá, usé el atributo role, que se puede usar con distintos valores para generar un determinados roles. -->
+
+        <section>
+            <h2>Formulario de contacto</h2>
+            <form action="./" method="post">
+                <fieldset>
+                    <legend>Información personal</legend>
+                    <div>
+                        <label >Nombre:
+                        <input type="text" name="name" placeholder="Julián David" required>
+
+                        </label>
+                    </div>
+                    <div>
+                        <label >Correo:
+                            <input type="email" name="email" placeholder="juliandorao@gmail.com" required>
+
+                        </label>   
+
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Información adicional</legend>
+                    <div>
+                        <label >Celular:
+                        <input type="tel" name="tel" placeholder="+549 2216544515" pattern="[0-9]{9}">
+                        <!--El atributo pattern con sus valores valida que ingresemos un teléfono con el patrón especificado-->
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Otros</legend>
+                    <div>
+                        <label for="why">¿Por qué querés contactarte?</label>
+                        <select name="why" id="why">
+                            <option value="1">Un trabajo</option>
+                            <hr>
+                            <option value="2">Dudas</option>
+                            <option value="">Más información</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="why_1">¿Sos desarrollador?</label>
+                        <input type="checkbox" id="why_1" name="why_1">
+                    </div>
+                    <div>
+                        <label for="why_2">¿Tenés un negocio?</label>
+                        <input type="checkbox" id="why_2" name="why_2">
+                    </div>
+                </fieldset>
+                <input type="submit" value="Enviar contacto">
+            </form>
+        </section>
     </main>
 
     <footer>
