@@ -78,6 +78,11 @@
      
         </img>
 
+        <!-- <video  autoplay loop muted poster="/" src="./PIAZZOLLA - CAFE 1930.mp4"></video> -->
+        <!--Atributos posibles: controls sin autoplay. El autoplay funciona con muted, sino no hay forma.-->
+
+        <!-- <audio autoplay controls src=""></audio> -->
+
         <!--Un ejemplo del uso de la semántica: -->
         <section>
            <article>
@@ -124,9 +129,9 @@
         </div>
         <!--  Acá, usé el atributo role, que se puede usar con distintos valores para generar un determinados roles. -->
 
-        <section>
+        <section> 
             <h2>Preguntas frecuentes</h2>
-            <details> <!-- Si uso el atributo open abro el detalle.-->
+            <details open> <!-- Genero una caja, un detalle desplegable. Si uso el atributo open abro el detalle.-->
                 <summary>¿Quién soy?</summary>
                <p>Soy desarrollador Full-Stack en Python, me destaco en HTML, CSS y JavaScript, especialmente en Bootstrap y Vue.js.</p> 
             </details>
@@ -136,7 +141,6 @@
                 <p>Estudiante del Profesorado en Letras. Me encanta el desarrollo web y la guitarra clásica.</p>
             </details>
         </section>
-
         <section>
             <h2>Formulario de contacto</h2>
             <form action="./" method="post">
@@ -199,11 +203,17 @@
                     </div>
 
                 </fieldset>
-                <input type="submit" value="Enviar contacto">
+                <!-- <input type="submit" value="Enviar contacto">-->
+                <!--Dentro de un formulario, excepto que usemos el atributo type con el valor button, los botones por defecto son de tipo submit-->
+                <button>Enviar contacto</button> <!--Si tengo que trabajar con un botón al elemento en cuestión le puedo agregar el atributo type="submit" para generar lo mismo por fuera del formulario.-->
                 
-    
             </form>
         </section>
+
+        <img src="./img/Carrousel.jpg" alt="Un carrousel con Javascript" >
+        <!--Cuando cargo una imagen alejada del principio del script puedo usar el atributo loading="lazy" para que la página web cargue la imagen a medida que el usuario hace scroll a partir y a partir de de la conexión del usuario.
+            Entonces no se cargan todos los recursos al mismo tiempo y podría cargar esta imagen que está más abajo en la página cuando la necesitamos.-->
+    
     </main>
 
     <footer>
