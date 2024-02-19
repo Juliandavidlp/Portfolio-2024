@@ -38,6 +38,10 @@
         }
     </style>
 
+    <!--La etiqueta script me permite escribir Javascript para ejecutar algo
+    <script> 
+        console.log('Hola') 
+    </script>-->
 </head>
 
 <body>
@@ -51,6 +55,28 @@
                 no enviar datos de nuestro login por http a otra página, y evitar un problema de seguridad.-->
         </nav>
     </header>
+
+    <dialog id="dialog"> <!--Con el valor open-->
+        <!-- Una modal encima del contenido. Como cuando abrimos un diario -->
+        <h1>Puedo abrir una modal así</h1>
+        <p>Y es totalmente nativo!</p>
+       <button id="hide">Cerrar modal</button>
+    </dialog>
+
+    <button id="show">Ver más información</button>
+
+    <script>
+    
+        window.show.addEventListener('click', () => {
+            window.dialog.showModal()
+        })
+
+        window.hide.addEventListener('click', () => {
+            window.dialog.close()
+        })
+
+    </script> <!--Cada vez que trabajo con un id, un identificador sobre un elemento en html, me va a crear una propiedad en el window con el nombre de ese id-->
+    
     <main>
 
         <p>+1 año de experiencia como <strong>Desarrollador Web</strong>.<br>
