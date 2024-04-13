@@ -61,6 +61,20 @@
             color: #2c0361;
         }
 
+        /* Hay elementos html que pueden encontrarse en un estado o situación especial,
+        y con css vamos a controlar los estilos que tiene ese elemento en ese estado.
+        Por ejemplo, cuando estamos encima de un ancor, de un link, hay un estado especial 
+        que es el estado de hover. Entonces podemos usar una pseudoclase para definir cómo se comporta ese elemento, 
+        por ejemplo por medio de :hover */
+
+        .link:hover{
+            color:#1092dd;
+            /*border: 2px solid currentColor; El borde en el contenido*/
+            outline: 2px solid currentColor; /*outline es el contorno. /*
+            /*La diferencia entre el borde y el contorno es que el borde afecta al contenido y el contorno se dibuja encima del contenido.*/
+        }
+            
+
         #show{
             background: #09f;
             color: white;
@@ -125,7 +139,7 @@
     
     <main>
 
-        <p class="description">+1 año de experiencia como <strong>Desarrollador Web</strong>.<br>
+        <p class="description">+1 año de experiencia como <strong>Desarrollador Web</strong>. <br>
          Estudiante del Profesorado en Letras y de guitarra clásica.
         </p>
 
@@ -143,7 +157,7 @@
         height="200"
         width="200"
         title="Foto de Julián Dorao"
-        src="./img/Julián.jpg" 
+        src="../Portfolio/img/Julián.jpg" 
         alt="Una fotografía de Julián Dorao sonriendo y mirando a la cámara en Bariloche, Argentina.">
         <!-- Hay atributos globales y específicos. El atributo "id" es un atributo global, como "class". En este sentido, todos los elementos se pueden repetir por medio de clases, 
              pero a cada elemento le corresponde un "id" específico. Por otro lado, existen atributos booleanos, como por ej. hidden--->
