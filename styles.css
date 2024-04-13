@@ -42,6 +42,22 @@ por ejemplo por medio de :hover */
     outline: 2px solid #3d0c97;
 }
     
+/* .link:focus{
+    border:#610603 
+} */
+
+/* .link:disabled {
+    ... */ 
+
+/*Más pseudoclases: first-child y last-child */
+.list-item:first-child{
+    color:#2c0361
+}
+
+.list-item:last-child{
+    color:#1092dd;
+
+}
 
 #show{
     background: #09f;
