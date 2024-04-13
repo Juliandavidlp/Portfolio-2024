@@ -18,11 +18,14 @@ h1 {
       El valor currentColor toma el mismo color del texto del elemento o del elemento padre*/
 }
 
+/*Clases*/
 .link{
     color: #2c0361;
 }
 
-/* Hay elementos html que pueden encontrarse en un estado o situación especial,
+/* Estados y pseudoclases:
+
+Hay elementos html que pueden encontrarse en un estado o situación especial,
 y con css vamos a controlar los estilos que tiene ese elemento en ese estado.
 Por ejemplo, cuando estamos encima de un ancor, de un link, hay un estado especial 
 que es el estado de hover. Entonces podemos usar una pseudoclase para definir cómo se comporta ese elemento, 
@@ -33,6 +36,10 @@ por ejemplo por medio de :hover */
     /*border: 2px solid currentColor; El borde en el contenido*/
     outline: 2px solid currentColor; /*outline es el contorno. /*
     /*La diferencia entre el borde y el contorno es que el borde afecta al contenido y el contorno se dibuja encima del contenido.*/
+}
+
+.link:active{ /*Se aplica cuando un elemento está activo, cuando hacemos click. */
+    outline: 2px solid #3d0c97;
 }
     
 
