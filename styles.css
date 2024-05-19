@@ -95,12 +95,9 @@ por ejemplo por medio de :hover */
 
 Sirven para especificar cómo queremos estilar los elementos poniendo el contexto en relación al elemento padre, 
 entonces primero busca el elemento de la izquierda y después selecciona el elemento a la derecha de manera especificada.
-
-Hay distintos operadores para especificar distintos elementos combinados::after
-Por ejemplo:
+Hay distintos operadores para especificar distintos elementos combinados. Por ejemplo:
 
 *Selector descendiente general:
-
 li li{color:...}
 
 *Operador para seleccionar un hijo directo, inmediato:
