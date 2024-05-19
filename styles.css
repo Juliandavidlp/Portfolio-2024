@@ -4,13 +4,14 @@ body { /*Una declaración*/
     /*El valor system-ui carga las fuentes del sistema operativo*/
 }
 
-h1 {
+h1 {    
     /*color:rgb(0 0 0 / 50%); Para marcar la transparencia del canal alfa*/
-    /*color: oklch(72.06% 0.178 230.82 / 50%)*/
+    /*color: oklch(72.06% 0.178 230.82 / 50%) Ver oklch.com*/
     /* color: hsl(60, 100%, 100%) */
     /*color: transparent*/
 
     color:#1092dd;
+    /*color:#09f;*/
     font-family: monospace;
     /*border-width: 3 px; Dibujo un borde de tres píxeles
       border-style: solid;
@@ -19,37 +20,46 @@ h1 {
 }
 
 /*Clases*/
+
+/*Siempre que se pueda tratar de evitar estilar 
+por elementos o por id's. Es preferible usar clases
+para no repetir etilos constantemente y reutilizar el código.*/
+
 .link{
     color: #2c0361;
 }
 
 /* Estados y pseudoclases:
 
-Hay elementos html que pueden encontrarse en un estado o situación especial,
+Hay elementos html que pueden encontrarse en un determinado estado o en situación especial,
 y con css vamos a controlar los estilos que tiene ese elemento en ese estado.
 Por ejemplo, cuando estamos encima de un ancor, de un link, hay un estado especial 
 que es el estado de hover. Entonces podemos usar una pseudoclase para definir cómo se comporta ese elemento, 
 por ejemplo por medio de :hover */
 
+
 .link:hover{
     color:#1092dd;
     /*border: 2px solid currentColor; El borde en el contenido*/
     outline: 2px solid currentColor; /*outline es el contorno. /*
-    /*La diferencia entre el borde y el contorno es que el borde afecta al contenido y el contorno se dibuja encima del contenido.*/
+    /*La diferencia entre el borde y el contorno es que el borde afecta al contenido y el contorno se dibuja encima del contenido.
+    Entonces si en vez de usar border usamos outline, el contorno, el borde no va a afectar el ancho, al contenido, 
+    el contorno se va a dibujar encima del contenido
+    */
 }
 
 .link:active{ /*Se aplica cuando un elemento está activo, cuando hacemos click. */
     outline: 2px solid #3d0c97;
 }
     
-/* .link:focus{
-    border:#610603 
+/* .link:focus{Se aplica cuando por ejemplo en un campo de entrada -un input- recibe el foco.
+    border: 1px solid #610603; 
 } */
 
 /* .link:disabled {
     ... */ 
 
-/*Más pseudoclases: first-child y last-child */
+/*Más pseudoclases: situaciones especiales de elementos con first-child y last-child */
 .list-item:first-child{
     color:#2c0361
 }
@@ -71,11 +81,44 @@ por ejemplo por medio de :hover */
     border: 1px solid #09f;}
     /* El width, el style y el color en un atajo*/
     
-    /* Valores especiales sobre la herencia:
+    /* Valores especiales sobre la herencia: hay propiedades que se heredan u otras que no.
+
         initial; Establece el valor inicial definido por las especificaciones de CSS.
-        unset; Resetea el valor, le saca las propiedades heredadas y las reestablece como no heredables.
-        revert; Revierte el valor de la herencia, vuelve al valor por defecto excepto que ya haya por ejemplo un valor por defecto (inherit).
-        inherit; Hereda, fuerza la herencia.
+        unset; Resetea el valor, le saca las propiedades heredadas y las convierte en no heredables.
+        revert; Revierte el valor de la herencia, vuelve al valor por defecto excepto haya por ejemplo un valor por defecto en el navegador (inherit).
+        inherit; Hereda, fuerza la herencia a partir del valor del padre.
    
         Nota: Las propiedades que por lo general se heredan tienen que ver con las fuentes y las del color del texto. Ante la duda, consultar en MDN-css.
     */
+
+/*Selectores combinados:
+
+Sirven para especificar cómo queremos estilar los elementos poniendo el contexto en relación al elemento padre, 
+entonces primero busca el elemento de la izquierda y después selecciona el elemento a la derecha de manera especificada.
+
+Hay distintos operadores para especificar distintos elementos combinados::after
+Por ejemplo:
+
+*Selector descendiente general:
+
+li li{color:...}
+
+*Operador para seleccionar un hijo directo, inmediato:
+ul > li{opacity:70%}
+
+*Operador para seleccionar el hermano siguiente:
+p ~ span{ Todos los elementos span que están después de la p son estilados.}
+
+*Operador para seleccionar el hermano adyacente directo:
+
+button + button{
+    margin-left:16px;
+}
+
+*/
+
+
+
+
+
+
