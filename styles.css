@@ -155,6 +155,44 @@ Relativas al wiewport:*/
     margin: 0;
 }
 
+/* Modelo de la caja
+
+El ancho y el alto de los elementos en línea, no puede estilarse.
+Los elementos de la caja de tipo en línea se comportan como texto,
+motivo por el que no tienen ni alto ni ancho. 
+
+En los elementos en línea lo que importa es el contenido del texto,
+tienen un display:inline por defecto. Esto no ocurre,
+por ejemplo si trabajamos con un div.
+
+En general pensamos en dos tipos de cajas, 
+en línea y en bloque. Flex y grid no dejan de ser tipos de cajas en bloque, 
+pero afectan a sus hijos de una forma diferente, en bloque hay tipos
+de cajas especiales distintas.
+
+inline-block
+
+flex-box
+
+flex
+grid
+
+Ahora, el tamaño de una caja por defecto va a depender
+del contenido, el padding y el borde. El margen no cambia
+el ancho ni el alto de la caja, trabaja desde afuera.*/
+
+.container{
+    width: 100px;
+    height: 100px;
+    background: #2c0361;
+    padding: 10px;
+    border: 10 px solid red;
+    margin: 16px;
+
+    box-sizing: border-box;  
+    /* Implica que el alto y el ancho de la caja el borde y el padding, hacia adentro*/ 
+}
+
     
 
 
