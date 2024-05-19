@@ -128,7 +128,7 @@ p{
 /*Como oklch no está soportado en todos los navegadores (https://caniuse.com/),
 si el navegador no toma el último color, va a tomar el primero.*/
 
-/* Especificidad
+/* Especificidad (X.Y.Z)
 
 En CSS tenemos un algoritmo que determina el selector CSS 
 que tiene la coincidencia más fuerte, que básicamente calcula
