@@ -134,13 +134,28 @@ En CSS tenemos un algoritmo que determina el selector CSS
 que tiene la coincidencia más fuerte, que básicamente calcula
 la relevancia, la especificidad del selector en contexto.
 
+   Unidades
 
+Unidades absolutas
 
+Píxeles: Los píxeles no son unidades completamente absolutas,
+antes lo eran, hoy en día los píxeles visuales no se corresponden
+con los píxeles de los dispositivos. Lo relativo es la densidad de píxeles
+en la que queremos renderizar el contenido.
 
-*/
+Unidades relativas
 
+Porcentajes(50%): Es una unidad relativa del contenedor padre.
 
+Relativas al wiewport:*/
 
+.container{
+    width: 50vw; /*El 50% del ancho del área de la ventana gráfica.*/
+    height: 50vh; /*El 50% de la altura del área de la ventana gráfica */
+    margin: 0;
+}
+
+    
 
 
 
