@@ -97,13 +97,13 @@ Sirven para especificar cómo queremos estilar los elementos poniendo el context
 entonces primero busca el elemento de la izquierda y después selecciona el elemento a la derecha de manera especificada.
 Hay distintos operadores para especificar distintos elementos combinados. Por ejemplo:
 
-*Selector descendiente general:
+#Selector descendiente general:
 li li{color:...}
 
 *Operador para seleccionar un hijo directo, inmediato:
 ul > li{opacity:70%}
 
-*Operador para seleccionar el hermano siguiente:
+*Operador para seleccionar el elemento siguiente:
 p ~ span{ Todos los elementos span que están después de la p son estilados.}
 
 *Operador para seleccionar el hermano adyacente directo:
@@ -111,6 +111,30 @@ p ~ span{ Todos los elementos span que están después de la p son estilados.}
 button + button{
     margin-left:16px;
 }
+
+Casacada:
+
+La cascada en acción determina el órden en el que vemos
+los estilos cuando hay conflictos de sobreescritura. En primer lugar,
+tiene en cuenta la posición y el órden de escritura de las reglas de escritura.
+Las reglas que están más abajo, las últimas son más importantes que las que están arriba,
+de hecho esto es la base para usar fallbacks en CSS. Por ejemplo:
+*/
+p{
+    color:#09f;
+    color: oklch(70% 0.148 238.24);
+    }
+
+/*Como oklch no está soportado en todos los navegadores (https://caniuse.com/),
+si el navegador no toma el último color, va a tomar el primero.*/
+
+/* Especificidad
+
+En CSS tenemos un algoritmo que determina el selector CSS 
+que tiene la coincidencia más fuerte, que básicamente calcula
+la relevancia, la especificidad del selector en contexto.
+
+
 
 */
 
