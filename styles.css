@@ -103,8 +103,8 @@ li li{color:...}
 *Operador para seleccionar un hijo directo, inmediato:
 ul > li{opacity:70%}
 
-*Operador para seleccionar el elemento siguiente:
-p ~ span{ Todos los elementos span que están después de la p son estilados.}
+*Operador para seleccionar el elemento siguiente, para seleccionar hermanos en general:
+p ~ span{ Todos los elementos span que están después de un p son estilados.}
 
 *Operador para seleccionar el hermano adyacente directo:
 
